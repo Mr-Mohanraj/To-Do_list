@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/main.css">
+    <title>ToDo list</title>
+</head>
+<body>
+    <h1 id="title">TODO web Application</h1>
+    <form action="/add" method="post">
+        <div class="add_div">
+            <label class="toto_title">Title<input class="input_add" type="text" name="title" placeholder="Enter your todo........" required>
+            </label>
+            <br>
+            <button type="submit" class="add_button">Add</button>
+        </div>
+    </form>
+    <div class="data_div">
+        <!-- for loop and if,while are using into the  symbols  -->
+        {% for todo in todo_list%} 
+        <!-- for same as print statement  -->
+        <p class="data_p">
+            <span class="data_id">{{todo.id}}</span> <span class="data_title">{{todo.title}}</span>
+        </p>
+            {% if todo.complete == False %}
+                <span class="complete_H" style="color:red;">NOT Complete</span>
+            {% else%}
+                <span class="complete_H">Complete</span>
+            {% endif %}
+            <div class="function">
+                <li class="a_tags"><a href="/update/{{todo.id}}">Update</a></li>
+                <li class="a_tags"><a href="/delete/{{todo.id}}">Delete</a></li>
+            </div>
+
+        <div class="after_a-tag">
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#title{
+    padding: 0.7rem;
+    color: red;
+    background-color: black;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+.add_div{
+    margin: 0;
+    padding: 0.7rem;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin-top: 2.5rem;
+}
+
+.toto_title{
+    padding: 0.8rem;
+    border: 2px green solid;
+    color: black;
+    width: 100%;
+    background-color: blue;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.7em;
+}
+
+.input_add {
+    margin: 0.7rem;
+    padding: 0.7rem;
+    background-color: black;
+    color: lightgreen;
+    border: 2px red solid;
+    text-align: center;
+    vertical-align: middle;
+    width: 70%;
+}
+
+.add_button{
+    margin: 0.9rem;
+    padding: 0.8rem;
+    color: white;
+    background-color: lightcoral;
+    border: 2px solid green ;
+    width: 30%;
+    box-shadow: 1px 1px 1px 0.2px black;
+}
+
+.add_button:hover,
+.add_button:active{
+    color: green;
+    background-color: lightyellow;
+    box-shadow: 1px 1px 0.6px 0.4px green;
+    font-size: 1rem;
+
+}
+
+.data_div{
+    background-color: lightskyblue;
+    color: black;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    top: 13.8rem;
+    display: inline-block;
+
+}
+
+.data_p{
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 0;
+
+}
+
+.data_id{
+    font-size: 1.6em;
+    text-align:right ;
+    color: white;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    width: 4%;
+
+}
+
+.data_title{
+    font-size: 1.6em;
+    color: white;
+    background-color: olivedrab;
+    border: 2px solid red;
+    border-top: 2px solid whitesmoke;
+}
+
+.data_div a{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    color:aqua;
+    display: block;
+}
+
+
+
+.data_div + span{
+    width: 100%;
+    padding: 0.2px;
+    text-align: center;
+    background-color: rebeccapurple;
+
+}
+
+.after_a-tag{
+    margin: 0.8rem;
+    padding: 0.1rem;
+    background-color: red;
+    width: 100%;
+    margin-left: 0;
+
+
+}
+
+
+.complete_H{
+    background-color: green;
+    color: aqua;
+    padding: 0.6rem;
+    text-align: right;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+
+.function {
+    width: 100%;
+    padding: 0.2px;
+    text-align: center;
+    background-color: rebeccapurple;
+    list-style: none;
+    text-decoration: none;
+}
+
+.a_tads{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/* Error html */
+
+.error{
+    width: 100%;
+    background-color: black;
+    color: red;
+}
