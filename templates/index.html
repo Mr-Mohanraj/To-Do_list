@@ -18,6 +18,9 @@
         </div>
     </form>
     <div class="data_div">
+        
+        <div class="after_a-tag">
+        </div>
         <!-- for loop and if,while are using into the  symbols  -->
         {% for todo in todo_list%} 
         <!-- for same as print statement  -->
@@ -30,12 +33,9 @@
                 <span class="complete_H">Complete</span>
             {% endif %}
             <div class="function">
-                <li class="a_tags"><a href="/update/{{todo.id}}">Update</a></li>
-                <li class="a_tags"><a href="/delete/{{todo.id}}">Delete</a></li>
+                <li class="a_tags update"><a href="/update/{{todo.id}}">Update</a></li>
+                <li class="a_tags delete" ><a href="/delete/{{todo.id}}">Delete</a></li>
             </div>
-
-        <div class="after_a-tag">
-        </div>
         {% endfor %}
     </div>
 </body>
